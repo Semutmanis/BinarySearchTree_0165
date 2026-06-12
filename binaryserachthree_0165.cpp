@@ -19,3 +19,8 @@ public:
   }
 
 };
+
+//membuat class binarythree
+class BinaryTree{
+  
+}
