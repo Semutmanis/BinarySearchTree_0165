@@ -15,3 +15,7 @@ public:
     //memberi nilai parameter ke variabel
     info = i;
     leftChild = l;
+    rightChild = r;
+  }
+
+};
