@@ -97,7 +97,7 @@ public:
     }
   }
 
-  void preorder(Node* ptr) {
+  void postorder(Node* ptr) {
     if (ROOT == nullptr){
       cout << "Tree is empty" << endl;
       return;
@@ -114,5 +114,58 @@ int main()
 {
   //deklarasi object x sebagai object BinaryTree
   BinaryTree X;
-  
+  // perulangan while selama bernilai benar 
+  while (true)
+  {
+    //membuat menu program dan input pilihan
+    cout << "\n================================================\n" << endl;
+    cout << "\n === MENU ===\n" << endl;
+    cout << "1. implement insert operation" << endl;
+    cout << "2. perform inorder traversal" << endl;
+    cout << "3. preform preorder traversal" << endl;
+    cout << "4. preform postorder traversal" << endl;
+    cout << "5. EXIT." << endl;
+    cout << "\n Enter yout choice (1-5) : ";
+
+    char ch;
+    cin >> ch;
+    cout << endl;
+
+    //membuat conditional statement dari input ch
+    switch (ch)
+    {
+      case '1':
+      {
+        cout << "Enter a word : ";
+        string word;
+        cin >> word;
+        X.insert(word);
+        break;
+      }
+      case '2':
+      {
+        X.inorder(X.ROOT);
+        break;
+      }
+      case '3':
+      {
+        X.preorder(X.ROOT);
+        break;
+      }
+      case '4':
+      {
+        X.postorder(X.ROOT);
+        break;
+      }
+      case '5':
+      {
+        return 0;
+      }
+      default :
+      {
+        cout << "Invalid Option" << endl;
+        break;
+      }
+    }
+  }
 }
