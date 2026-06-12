@@ -66,7 +66,10 @@ public:
     while ((currentNode != nullptr) && (currentNode->info != element))
     {
       parent = currentNode;
-      if
+      if (element < currentNode->info)
+        currentNode =currentNode->leftChild;
+      else
+        currentNode =currentNode->rightChild;
     }
   }
 }
