@@ -14,3 +14,4 @@ public:
   Node(string i, Node* l, Node* r){
     //memberi nilai parameter ke variabel
     info = i;
+    leftChild = l;
