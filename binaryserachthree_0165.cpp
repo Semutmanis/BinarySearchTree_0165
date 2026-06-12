@@ -22,5 +22,7 @@ public:
 
 //membuat class binarythree
 class BinaryTree{
-  
+  //memberi akses modifier dan deklarasi object
+public:
+  Node* ROOT;
 }
