@@ -12,3 +12,5 @@ public:
 
   //membuat constructor untuk kelas node
   Node(string i, Node* l, Node* r){
+    //memberi nilai parameter ke variabel
+    info = i;
