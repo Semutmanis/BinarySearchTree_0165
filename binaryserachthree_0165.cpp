@@ -108,4 +108,11 @@ public:
       cout << ptr->info << " ";
     }
   }
+};
+
+int main()
+{
+  //deklarasi object x sebagai object BinaryTree
+  BinaryTree X;
+  
 }
