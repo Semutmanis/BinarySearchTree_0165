@@ -31,5 +31,11 @@ public:
   }
 
   //membuat prosedur insert
-  void insert(string element){}
+  void insert(string element){
+    //memberi nilai untuk setiap object yang beras di dalam prosedur insert
+    Node* newNode = new Node(element, nullptr, nullptr);
+    newNode->info = element;
+    newNode->leftChild = nullptr;
+    newNode->rightChild = nullptr;
+  }
 }
